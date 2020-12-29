@@ -1,0 +1,86 @@
+seed: 1
+device: 1k
+read_chipdb +/share/arachne-pnr/chipdb-1k.bin...
+  supported packages: cb121, cb132, cb81, cm121, cm36, cm49, cm81, qn84, swg16tr, tq144, vq100
+read_blif example.blif...
+prune...
+read_pcf example.pcf...
+Sajjad1...
+Sajjad2...a
+Sajjad2...b
+Sajjad2...s
+Sajjad2...y
+Sajjad2 (int)words.size()...3
+Sajjad2 words[]...set_io a 112
+Sajjad4...
+Sajjad4i...1
+Sajjad4...
+Sajjad4i...2
+Sajjad5...a
+Sajjad6...
+Sajjad7...pin_name:112net_name:aloc:250/1
+Sajjad2 (int)words.size()...3
+Sajjad2 words[]...set_io b 113
+Sajjad4...
+Sajjad4i...1
+Sajjad4...
+Sajjad4i...2
+Sajjad5...b
+Sajjad6...
+Sajjad7...pin_name:113net_name:bloc:250/0
+Sajjad2 (int)words.size()...3
+Sajjad2 words[]...set_io y 99
+Sajjad4...
+Sajjad4i...1
+Sajjad4...
+Sajjad4i...2
+Sajjad5...y
+Sajjad6...
+Sajjad7...pin_name:99net_name:yloc:181/1
+Sajjad5...s
+Sajjad6...
+Sajjad7...pin_name:114net_name:sloc:249/1
+instantiate_io...
+pack...
+
+After packing:
+IOs          4 / 96
+GBs          0 / 8
+  GB_IOs     0 / 8
+LCs          2 / 1280
+  DFF        0
+  CARRY      0
+  CARRY, DFF 0
+  DFF PASS   0
+  CARRY PASS 0
+BRAMs        0 / 16
+WARMBOOTs    0 / 1
+PLLs         0 / 1
+
+place_constraints...
+promote_globals...
+  promoted 0 nets
+  0 globals
+realize_constants...
+place...
+  initial wire length = 103
+  at iteration #50: temp = 13.1588, wire length = 51
+  at iteration #100: temp = 4.96553, wire length = 32
+  at iteration #150: temp = 1.18657, wire length = 15
+  final wire length = 9
+
+After placement:
+PIOs       3 / 96
+PLBs       1 / 160
+BRAMs      0 / 16
+
+  place time 0.00s
+route...
+  pass 1, 0 shared.
+
+After routing:
+span_4     3 / 6944
+span_12    0 / 1440
+
+  route time 0.00s
+write_txt example.asc...

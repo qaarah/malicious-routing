@@ -1,0 +1,9 @@
+Hello Test Generated blif!
+.model top
+.inputs a b
+.outputs y
+.names $false
+.attr module_not_derived 00000000000000000000000000000001
+.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
+.param LUT_INIT 1111000000000000
+.end

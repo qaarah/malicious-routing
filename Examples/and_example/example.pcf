@@ -1,0 +1,7 @@
+#example.pcf
+
+set_io a 112
+
+set_io b 113
+
+set_io y 99

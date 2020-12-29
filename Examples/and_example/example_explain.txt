@@ -1,0 +1,263 @@
+Reading file 'example.asc'..
+Fabric size (without IO tiles): 12 x 16
+
+.io_tile 1 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 2 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 3 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 4 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 5 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 6 0
+IoCtrl REN_0
+IoCtrl REN_1
+
+.io_tile 7 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 8 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 9 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 10 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 11 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 12 0
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 1
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 1
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 2
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 2
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 3
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 3
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 4
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 4
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 5
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 5
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 6
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 6
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 7
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 7
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 8
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 8
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 9
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 9
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 10
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 10
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 11
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 11
+IoCtrl IE_0
+IoCtrl REN_0
+IoCtrl REN_1
+
+.io_tile 0 12
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 12
+Warning: No DB entries for some bits:
+  B0 ------------------
+  B1 -----------------
+  B2 ------------------
+  B3 ------------------
+  B4 -----+++---------
+  B5 -----------------
+  B6 --+--------------
+  B7 ------------------
+  B8 -----------------
+  B9 ---+-------------
+ B10 ------------?--+ B10[12]
+ B11 ------------?---- B11[12]
+ B12 ------------------
+ B13 ----------------+
+ B14 ----------------+
+ B15 -----------------
+IOB_1 PINTYPE_1
+IOB_1 PINTYPE_4
+IoCtrl IE_0
+IoCtrl REN_0
+buffer glb_netwk_1 io_global/cen
+buffer span4_horz_21 local_g0_5
+
+.io_tile 0 13
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 13
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 14
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 14
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 15
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 15
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 0 16
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 13 16
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 1 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 2 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 3 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 4 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 5 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 6 17
+IoCtrl IE_1
+
+.io_tile 7 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 8 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 9 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 10 17
+IoCtrl IE_0
+IoCtrl REN_0
+
+.io_tile 11 17
+IOB_1 PINTYPE_1
+IoCtrl IE_0
+IoCtrl REN_1
+
+.io_tile 12 17
+IOB_0 PINTYPE_1
+IOB_1 PINTYPE_1
+IoCtrl REN_0
+IoCtrl REN_1
+
+.logic_tile 12 12
+routing sp4_h_r_5 sp4_v_b_5
+Traceback (most recent call last):
+  File "/usr/local/bin/icebox_explain", line 162, in <module>
+    print_tile(".logic_tile %d %d" % idx, ic, idx[0], idx[1], ic.logic_tiles[idx], ic.tile_db(idx[0], idx[1]))
+  File "/usr/local/bin/icebox_explain", line 87, in print_tile
+    active_luts = set([i for i in range(8) if "1" in icebox.get_lutff_bits(tile, i)])
+  File "/usr/local/bin/icebox_explain", line 87, in <listcomp>
+    active_luts = set([i for i in range(8) if "1" in icebox.get_lutff_bits(tile, i)])
+  File "/usr/local/bin/icebox.py", line 1415, in get_lutff_bits
+    bits[lutff_bitnum] = line[i];
+IndexError: string index out of range

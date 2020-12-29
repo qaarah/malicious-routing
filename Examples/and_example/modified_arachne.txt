@@ -1,0 +1,74 @@
+seed: 1
+device: 1k
+read_chipdb +/share/arachne-pnr/chipdb-1k.bin...
+  supported packages: cb121, cb132, cb81, cm121, cm36, cm49, cm81, qn84, swg16tr, tq144, vq100
+read_blif example.blif...
+TestBlif1...
+TestBlif3...a 
+TestBlif3...b 
+TestBlif33...s 
+TestBlif4...SB_LUT4 
+TestBlif4words...I0=$false 
+TestBlif4words...I1=$false 
+TestBlif4words...I2=a 
+TestBlif4words...I3=b 
+TestBlif4words...O=y 
++TestBlif4words Altered...O=y1 
+TestAttr2... words1 module_not_derived words2 00000000000000000000000000000001 
+TestAttr1... words1 src words2 "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52" 
+TestBlif6...LUT_INIT 1111000000000000 
++TestBlif Added44...SB_LUT4 
++TestAttr Added11... words1 src words2 "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52" 
++TestAttr Added22... words1 module_not_derived words2 00000000000000000000000000000001 
++TestBlif Added66...LUT_INIT 1100110011110001 
++TestBlif Added44words...I0=$false 
++TestBlif Added44words...I1=b 
++TestBlif Added44words...I2=y1 
++TestBlif Added44words...I3=s 
++TestBlif Added44words...O=y 
+prune...
+read_pcf example.pcf...
+instantiate_io...
+pack...
+
+After packing:
+IOs          4 / 96
+GBs          0 / 8
+  GB_IOs     0 / 8
+LCs          2 / 1280
+  DFF        0
+  CARRY      0
+  CARRY, DFF 0
+  DFF PASS   0
+  CARRY PASS 0
+BRAMs        0 / 16
+WARMBOOTs    0 / 1
+PLLs         0 / 1
+
+place_constraints...
+promote_globals...
+  promoted 0 nets
+  0 globals
+realize_constants...
+place...
+  initial wire length = 88
+  at iteration #50: temp = 11.1311, wire length = 30
+  at iteration #100: temp = 3.99032, wire length = 20
+  at iteration #150: temp = 0.722962, wire length = 14
+  final wire length = 10
+
+After placement:
+PIOs       3 / 96
+PLBs       1 / 160
+BRAMs      0 / 16
+
+  place time 0.00s
+route...
+  pass 1, 0 shared.
+
+After routing:
+span_4     4 / 6944
+span_12    0 / 1440
+
+  route time 0.01s
+write_txt example.asc...

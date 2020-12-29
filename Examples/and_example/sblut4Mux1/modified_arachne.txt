@@ -1,0 +1,48 @@
+seed: 1
+device: 1k
+read_chipdb +/share/arachne-pnr/chipdb-1k.bin...
+  supported packages: cb121, cb132, cb81, cm121, cm36, cm49, cm81, qn84, swg16tr, tq144, vq100
+read_blif example.blif...
+SajjadBlif1...
+SajjadBlif3...a 
+SajjadBlif3...b 
+SajjadBlif3...s 
+SajjadBlif22...s 
+SajjadBlif4...SB_LUT4 
+SajjadBlif4words...I0=$false 
+SajjadBlif4words...I1=b 
+SajjadBlif4words...I2=y1 
+SajjadBlif4words...I3=s 
+SajjadBlif4words...O=y 
+SajjadBlif4wordsAltered...O=y1 
+SajjadBlif44...SB_LUT4 
+SajjadBlif44words...I0=$false 
+SajjadBlif44words...I1=b 
+SajjadBlif44words...I2=y1 
+SajjadBlif44words...I3=s 
+SajjadBlif44words...O=y 
+SajjadAttr2... words1 module_not_derived words2 00000000000000000000000000000001 
+SajjadAttr22... words1 module_not_derived words2 00000000000000000000000000000001 
+SajjadAttr1... words1 src words2 "example.v:6.37-6.94" 
+SajjadAttr11... words1 src words2 "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52" 
+SajjadBlif6...LUT_INIT 1100110011110000 
+SajjadBlif66...LUT_INIT 1100110011110000 
+SajjadBlif4...SB_LUT4 
+SajjadBlif4words...I0=$false 
+SajjadBlif4words...I1=$false 
+SajjadBlif4words...I2=a 
+SajjadBlif4words...I3=b 
+SajjadBlif4words...O=y1 
+SajjadBlif44...SB_LUT4 
+SajjadBlif44words...I0=$false 
+SajjadBlif44words...I1=b 
+SajjadBlif44words...I2=y1 
+SajjadBlif44words...I3=s 
+SajjadBlif44words...O=y 
+SajjadAttr2... words1 module_not_derived words2 00000000000000000000000000000001 
+SajjadAttr22... words1 module_not_derived words2 00000000000000000000000000000001 
+SajjadAttr1... words1 src words2 "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52" 
+SajjadAttr11... words1 src words2 "/usr/local/bin/../share/yosys/ice40/cells_map.v:22.34-23.52" 
+SajjadBlif6...LUT_INIT 1111000000000000 
+SajjadBlif66...LUT_INIT 1100110011110000 
+example.blif:18: fatal error: net `y' has multiple drivers

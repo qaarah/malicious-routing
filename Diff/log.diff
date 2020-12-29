@@ -1,0 +1,29 @@
+--- ../Examples/and_example/modified_iceprog.txt	2020-08-19 20:54:13.773839331 +0200
++++ ../../Ext_Triggered_Trojan/Qazi/Original/and/log.txt	2020-08-19 21:11:53.826329994 +0200
+@@ -1,22 +1,12 @@
+-Sajjad>Bye1.
+-Sajjad>Bye2.
+-Sajjad>file_size: %
+ init..
+-cdone: high
++cdone: low
+ reset..
+ cdone: low
+ flash ID: 0x20 0xBA 0x16 0x10 0x00 0x00 0x23 0x74 0x33 0x85 0x08 0x00 0x51 0x00 0x32 0x24 0x12 0x17 0x1B 0x2D
+ file size: 32220
+ erase 64kB sector at 0x000000..
+ programming..
+-Sajjad>Read File..
+-Sajjad>read_size: 262144
+-Sajjad> buffer204: 0 buffer205: 0 
+-Sajjad>Last Record
+-Sajjad>done
+-Sajjad> crc_value: 0514
+ reading..
+-Sajjad>Read File..
+-Sajjad>read_size: 262144
+-Found difference between flash and file!
+-ABORT.
++VERIFY OK
++cdone: high
++Bye.

@@ -1,0 +1,62 @@
+Reading file 'example.asc'..
+Fabric size (without IO tiles): 12 x 16
+
+.io_tile 6 0
+IoCtrl REN_0
+IoCtrl REN_1
+
+.io_tile 13 11
+IoCtrl IE_0
+IoCtrl IE_1
+IoCtrl REN_1
+
+.io_tile 13 12
+IOB_1 PINTYPE_0
+IOB_1 PINTYPE_3
+IOB_1 PINTYPE_4
+IoCtrl IE_0
+IoCtrl IE_1
+buffer local_g0_1 io_1/D_OUT_0
+buffer span4_horz_9 local_g0_1
+
+.io_tile 13 16
+IoCtrl IE_0
+IoCtrl IE_1
+routing span4_vert_t_14 span4_horz_13
+
+.io_tile 6 17
+IoCtrl IE_1
+
+.io_tile 9 17
+IoCtrl IE_0
+IoCtrl REN_1
+
+.io_tile 10 17
+IOB_1 PINTYPE_0
+IoCtrl IE_0
+IoCtrl IE_1
+
+.io_tile 12 17
+IOB_0 PINTYPE_0
+IOB_1 PINTYPE_0
+IoCtrl REN_0
+IoCtrl REN_1
+
+.logic_tile 12 12
+routing sp4_v_t_41 sp4_h_r_9
+
+.logic_tile 12 16
+LC_2 0000111100110011 0000
+LC_5 0000000000001111 0000
+buffer local_g0_4 lutff_5/in_3
+buffer local_g0_5 lutff_2/in_3
+buffer local_g1_0 lutff_2/in_1
+buffer local_g1_2 lutff_5/in_2
+buffer local_g1_5 lutff_2/in_2
+buffer lutff_2/out sp4_v_b_4
+buffer lutff_5/out local_g1_5
+buffer neigh_op_top_0 local_g1_0
+buffer neigh_op_top_2 local_g1_2
+buffer neigh_op_top_4 local_g0_4
+buffer sp4_h_r_13 local_g0_5
+

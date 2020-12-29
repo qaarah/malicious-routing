@@ -1,0 +1,15 @@
+# arachne-pnr 0.1+20180513git5d830dd (git sha1 5d830dd, g++ 9.3.0-6ubuntu1 -O2 -fdebug-prefix-map=/build/arachne-pnr-AaC6iz/arachne-pnr-0.1+20180513git5d830dd=. -fstack-protector-strong -O2 -DNDEBUG)
+.model top
+.inputs a b
+.outputs y
+.names $false
+.gate SB_IO PACKAGE_PIN=a LATCH_INPUT_VALUE= CLOCK_ENABLE= INPUT_CLK= OUTPUT_CLK= OUTPUT_ENABLE= D_OUT_0= D_OUT_1= D_IN_0=a$2 D_IN_1=
+.param PIN_TYPE 000001
+.gate SB_IO PACKAGE_PIN=b LATCH_INPUT_VALUE= CLOCK_ENABLE= INPUT_CLK= OUTPUT_CLK= OUTPUT_ENABLE= D_OUT_0= D_OUT_1= D_IN_0=b$2 D_IN_1=
+.param PIN_TYPE 000001
+.gate SB_IO PACKAGE_PIN=y LATCH_INPUT_VALUE= CLOCK_ENABLE= INPUT_CLK= OUTPUT_CLK= OUTPUT_ENABLE= D_OUT_0=y$2 D_OUT_1= D_IN_0= D_IN_1=
+.param PIN_TYPE 011001
+.gate ICESTORM_LC I0=$false I1=$false I2=a$2 I3=b$2 CIN= CLK= CEN= SR= LO= O=y$2 COUT=
+.attr src "/usr/local/bin/../share/yosys/ice40/cells_map.v:17.34-18.52"
+.param LUT_INIT 1111000000000000
+.end
