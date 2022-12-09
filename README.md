@@ -29,6 +29,7 @@ After the Bitstream has been generated using the original or the modified tools,
 
 ## **Citation:**
 Please cite the paper as following:
+
 Q. A. Ahmed, T. Wiersema and M. Platzner, "Malicious Routing: Circumventing Bitstream-level Verification for FPGAs," 2021 Design, Automation & Test in Europe Conference & Exhibition (DATE), 2021, pp. 1490-1495, doi: 10.23919/DATE51398.2021.9474026.
  
 
