@@ -33,25 +33,25 @@ module aes_8_bit (rst, clk, select, d_out, d_vld);
 
     always @ (posedge clk)
     begin
-        d_out1 <= d_out_w;
-    end
-        // d_out <= select ? key_in:d_out1;
+    //     // d_out1 <= d_out_w;
+    //     // d_out <= select ? key_in:d_out1;
     
-    // assign d_out = (select) ? key_in:d_out1;
+    d_out = (select) ? key_in:d_out1;
+    end
 
     // //***this should be insterted ****//
-    localparam [14:0] KEEP = 15'b111111111110000;
-    localparam [14:0] FLIP = 15'b000111100000000;
-    SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_0 (.I0(1'b0), .I1(rk_last_out[0]), .I2(d_out1[0]), .I3(select), .O(d_out[0]));
-    SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_1 (.I0(1'b0), .I1(rk_last_out[1]), .I2(d_out1[1]), .I3(select), .O(d_out[1]));
-    SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_2 (.I0(1'b0), .I1(rk_last_out[2]), .I2(d_out1[2]), .I3(select), .O(d_out[2]));
-    SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_3 (.I0(1'b0), .I1(rk_last_out[3]), .I2(d_out1[3]), .I3(select), .O(d_out[3]));
-    SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_4 (.I0(1'b0), .I1(rk_last_out[4]), .I2(d_out1[4]), .I3(select), .O(d_out[4]));
-    SB_LUT4 #(.LUT_INIT({1'b0, FLIP})) MUX_5 (.I0(1'b0), .I1(rk_last_out[5]), .I2(d_out1[5]), .I3(select), .O(d_out[5]));
-    SB_LUT4 #(.LUT_INIT({1'b0, FLIP})) MUX_6 (.I0(1'b0), .I1(rk_last_out[6]), .I2(d_out1[6]), .I3(select), .O(d_out[6]));
-    SB_LUT4 #(.LUT_INIT({1'b0, FLIP})) MUX_7 (.I0(1'b0), .I1(rk_last_out[7]), .I2(d_out1[7]), .I3(select), .O(d_out[7]));
+    // localparam [14:0] KEEP = 15'b111111111110000;
+    // localparam [14:0] FLIP = 15'b000111100000000;
+    // SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_0 (.I0(1'b0), .I1(rk_last_out[0]), .I2(d_out1[0]), .I3(select), .O(d_out[0]));
+    // SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_1 (.I0(1'b0), .I1(rk_last_out[1]), .I2(d_out1[1]), .I3(select), .O(d_out[1]));
+    // SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_2 (.I0(1'b0), .I1(rk_last_out[2]), .I2(d_out1[2]), .I3(select), .O(d_out[2]));
+    // SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_3 (.I0(1'b0), .I1(rk_last_out[3]), .I2(d_out1[3]), .I3(select), .O(d_out[3]));
+    // SB_LUT4 #(.LUT_INIT({1'b1, KEEP})) MUX_4 (.I0(1'b0), .I1(rk_last_out[4]), .I2(d_out1[4]), .I3(select), .O(d_out[4]));
+    // SB_LUT4 #(.LUT_INIT({1'b0, FLIP})) MUX_5 (.I0(1'b0), .I1(rk_last_out[5]), .I2(d_out1[5]), .I3(select), .O(d_out[5]));
+    // SB_LUT4 #(.LUT_INIT({1'b0, FLIP})) MUX_6 (.I0(1'b0), .I1(rk_last_out[6]), .I2(d_out1[6]), .I3(select), .O(d_out[6]));
+    // SB_LUT4 #(.LUT_INIT({1'b0, FLIP})) MUX_7 (.I0(1'b0), .I1(rk_last_out[7]), .I2(d_out1[7]), .I3(select), .O(d_out[7]));
     
-    // //***this should be insterted ****//
+    // // //***this should be insterted ****//
 
     
     assign pld = pld_reg;

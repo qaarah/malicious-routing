@@ -1,0 +1,78 @@
+# ##############################################################################
+
+# iCEstick PCF
+
+# ##############################################################################
+
+# This is the version that you don't have to uncomment
+# things you don't use. Requires a recent version of arachne
+
+# Clock
+set_io --warn-no-port clk 21   # 12 MHz clock
+
+## LEDs
+set_io --warn-no-port rst 99  # red
+#set_io --warn-no-port d_vld 98  # red
+#set_io --warn-no-port LED3 97  # red
+#set_io --warn-no-port LED4 96  # red
+set_io --warn-no-port d_vld 95  # green
+#
+## IRDA interface
+#set_io --warn-no-port IRRXD 106
+#set_io --warn-no-port IRTXD 105
+#set_io --warn-no-port IRSD 107
+#
+## SPI (to configuration EEPROM)
+#set_io --warn-no-port SPI_SCK 70
+#set_io --warn-no-port SPI_SI 68
+#set_io --warn-no-port SPI_SO 67
+#set_io --warn-no-port SPI_SS 71
+
+# J1
+# set_io --warn-no-port J1_1  3.3V
+# set_io --warn-no-port J1_2 GND
+#set_io --warn-no-port key_in[0] 112  # PIO0_02 
+#set_io --warn-no-port key_in[1] 113  # PIO0_03 
+#set_io --warn-no-port key_in[2] 114  # PIO0_04 
+#set_io --warn-no-port key_in[3] 115  # PIO0_05 
+#set_io --warn-no-port key_in[4] 116  # PIO0_06 PMOD pin 7
+#set_io --warn-no-port key_in[5] 117  # PIO0_07 PMOD pin 8
+#set_io --warn-no-port key_in[6] 118  # PIO0_08 PMOD pin 9
+#set_io --warn-no-port key_in[7] 119 # PIO0_09 PMOD pin 10
+
+# J3
+# set_io --warn-no-port J3_1 3.3V
+# set_io --warn-no-port J3_2 GND
+set_io --warn-no-port d_out[0] 62  # PIO2_17
+set_io --warn-no-port d_out[1] 61  # PIO2_16
+set_io --warn-no-port d_out[2] 60  # PIO2_15
+set_io --warn-no-port d_out[3] 56  # PIO2_14
+set_io --warn-no-port d_out[4] 48  # PIO2_13
+set_io --warn-no-port d_out[5] 47  # PIO2_12
+set_io --warn-no-port d_out[6] 45  # PIO2_11
+set_io --warn-no-port d_out[7] 44  # PIO2_10
+
+# PMOD
+# Note: pin 5 and 11 are ground, pins 6 and 12 are Vcc
+set_io --warn-no-port d_in[0] 78 # PIO1_02
+set_io --warn-no-port d_in[1] 79 # PIO1_03
+set_io --warn-no-port d_in[2] 80 # PIO1_04
+set_io --warn-no-port d_in[3] 81 # PIO1_05
+set_io --warn-no-port d_in[4] 87 # PIO1_06
+set_io --warn-no-port d_in[5] 88 # PIO1_07
+set_io --warn-no-port d_in[6] 90 # PIO1_08
+set_io --warn-no-port d_in[7]  91 # PIO1_09
+
+
+## FTDI Port B UART
+#set_io --warn-no-port rst 1
+#set_io --warn-no-port d_vld 2
+#set_io --warn-no-port DTRn 3
+#set_io --warn-no-port CTSn 4
+#set_io --warn-no-port RTSn 7
+#set_io --warn-no-port d_out[0] 8
+#set_io --warn-no-port RS232_Rx 9
+#
+## Config pins
+#set_io --warn-no-port CDONE 65
+#set_io --warn-no-port CRESET_B 66

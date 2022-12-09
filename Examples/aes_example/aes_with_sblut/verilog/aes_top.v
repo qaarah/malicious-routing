@@ -7,7 +7,7 @@ module aes_8_bit (rst, clk, select, d_out, d_vld);
     // assign select = 1'b0;     //select=0
     output [7:0] d_out;
     output reg d_vld;
-    wire [7:0] d_out1;
+    reg [7:0] d_out1;
     
     // initial
     // begin
@@ -28,7 +28,7 @@ module aes_8_bit (rst, clk, select, d_out, d_vld);
     reg [7:0] mc_en_reg;
     reg pld_reg;
     wire [7:0] mc_en;
-    reg [7:0] d_out;
+    wire [7:0] d_out;
     wire [7:0] d_out_w;
 
     always @ (posedge clk)

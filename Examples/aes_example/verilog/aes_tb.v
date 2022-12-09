@@ -20,7 +20,7 @@ module aes_tb;
     //parameter kin = 128'h2b7e151628aed2a6abf7158809cf4f3c;
     //parameter din = 128'h3243f6a8885a308d313198a2e0370734;
 
-    aes_8_bit test (rst, clk, key_in, d_in, d_out, d_vld);
+    aes_8_bit test (rst, clk, key_in, d_in, d_out, d_out1, d_vld);
 
     always # (CP/2)
     begin

@@ -31,7 +31,7 @@ set_io --warn-no-port d_out[4] 95  # green
 # J1
 # set_io --warn-no-port J1_1  3.3V
 # set_io --warn-no-port J1_2 GND
-#set_io --warn-no-port select 116  # PIO0_02 
+set_io --warn-no-port select 116  # PIO0_02 
 #set_io --warn-no-port key_in[1] 113  # PIO0_03 
 #set_io --warn-no-port key_in[2] 114  # PIO0_04 
 #set_io --warn-no-port key_in[3] 115  # PIO0_05 
