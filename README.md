@@ -23,6 +23,7 @@ This project contains source code of the modified Tools for the insertion and ac
     1. Original tools
     1. Modified Tools
     1. Examples
+    
 The above scripts will then synthesize the given example benchmark files, inserts Trojans if modifies tools are used and the generate the Bitstream. 
 After the Bitstream has been generated using the original or the modified tools, the iCE40HX-1k FPGA can be configured. 
 ## **Citation:**
