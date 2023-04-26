@@ -2,8 +2,8 @@
 ----------------------------
  
  
-# Malicious Routing of a Trojan Circuit
-This project contains source code of the modified Tools for the insertion and activation of a Trojan circuit. 
+# Malicious Routing of a Trojan Circuit in FPGAs
+This project contains source code of the modified Tools for the insertion and activation of a Trojan circuit in FPGAs. 
 ## **Requirements**
 1. Yosys (version 0.9 release recommended)
 1. SystemC version 2.3.1a
